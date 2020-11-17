@@ -1,5 +1,5 @@
 <div class="ngx-mat-tel-input-container">
-  <button type="button" mat-button [matMenuTriggerFor]="menu" (click)="$event.preventDefault(); $event.stopPropagation();" class="country-selector">
+  <button tabindex="500" type="button" mat-button [matMenuTriggerFor]="menu" (click)="$event.preventDefault(); $event.stopPropagation();" class="country-selector">
     <span class="country-selector-flag flag" [ngClass]="selectedCountry.flagClass"></span>
     <span class="country-selector-code" *ngIf="selectedCountry?.dialCode">+{{selectedCountry.dialCode}}</span>
   </button>
